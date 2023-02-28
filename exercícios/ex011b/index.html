@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir  esse site em vários dispositivos ou simplesmetne aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/medium.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/big.png" type="image/png">
+        <img src="img/bigger.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <!-- <audio src="midia/Ice & Fire - King Canyon.mp3" controls autoplay></audio> //* -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+    </audio>
+    <!-- <video src="video/pexels-darina-belonogova-7539262.mp4" width="480px"controls=""></video> -->
+    <video width="180" poster="img/big.png" controls>
+        <source src="video/pexels-darina-belonogova-7539262.mp4" type="video/mp4">
+        <p>Seu navegador nao tem compatibvilidade. <a href="video/pexels-darina-belonogova-7539262.mp4">Baixe aqui o video.</a></p>
+    </video>
+</body>
+</html>
