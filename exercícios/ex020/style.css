@@ -1,0 +1,53 @@
+@charset "UFF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+div {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    height: 100px;
+    margin-bottom: 10px;
+    color: blueviolet;
+    padding-top: 15px;
+}
+
+div:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+div > p.txt {
+    display: none;
+}
+
+div:hover > p.txt {
+    display: block;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color:aquamarine;
+    text-decoration: underline;
+}
+
+a::before {
+    content: '⇦ ';
+}
