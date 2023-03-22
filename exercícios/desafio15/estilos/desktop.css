@@ -1,2 +1,33 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 1201px) {
+    main {
+        background-image: linear-gradient(45deg, #BCF6F7, #f7d5ed);
+    }
+
+    section#login {
+        width: 980px;
+        transition: width .2s, height .1s;       
+    }
+
+    div#imagem {
+        float: right;
+        width: 30%;
+        height: 300px;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    div#formulario {
+        float: left;
+        width: 60%;
+    }
+
+    input#iemail, input#isenha {
+        width: 90%;
+        translate: -46% -50%;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    
+}
